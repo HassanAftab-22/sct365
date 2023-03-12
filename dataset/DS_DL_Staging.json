@@ -1,0 +1,19 @@
+{
+	"name": "DS_DL_Staging",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Dl_Connection",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Sample.csv",
+				"folderPath": "Data",
+				"fileSystem": "sct-container-dev"
+			}
+		}
+	}
+}
