@@ -1,0 +1,29 @@
+{
+	"name": "Get_Data_From_Sharepoint",
+	"properties": {
+		"activities": [
+			{
+				"name": "Get Bearer Token",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://accounts.accesscontrol.windows.net/5b703e6a-eac8-44b7-9c04-356bd60d435d/tokens/OAuth/2",
+					"method": "POST",
+					"headers": {
+						"Content-Type": "application/x-www-form-urlencoded"
+					},
+					"body": "grant_type=client_credentials&client_id=23cc7221-b128-4970-b24c-5e5d703676f5@5b703e6a-eac8-44b7-9c04-356bd60d435d&client_secret=eBe8Q~bj1u5QEMlmGqLCB3S1iVPFvfUASR4fUceh&resource=00000003-0000-0ff1-ce00-000000000000/lucasmonroecouk.sharepoint.com@5b703e6a-eac8-44b7-9c04-356bd60d435d"
+				}
+			}
+		],
+		"annotations": []
+	}
+}

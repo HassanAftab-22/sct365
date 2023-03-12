@@ -1,0 +1,16 @@
+{
+	"name": "DS_DWH_Destination",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzDwh_Connection",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "RAW",
+			"table": "Orders"
+		}
+	}
+}
