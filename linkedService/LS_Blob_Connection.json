@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"containerUri": "https://sct365dev.blob.core.windows.net/sct365-container",
+			"containerUri": "https://sct365dev.blob.core.windows.net/sct-container-dev",
 			"authenticationType": "Anonymous"
 		}
 	}
