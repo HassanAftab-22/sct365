@@ -49,9 +49,10 @@
 							"type": "HttpReadSettings",
 							"requestMethod": "GET",
 							"additionalHeaders": {
-								"value": "@{concat(\n    'Authorization:Bearer ', activity('Get Bearer Token').output.access_token\n)}",
+								"value": "@{concat('Authorization: Bearer ', activity('Get Bearer Token').output.access_token)}",
 								"type": "Expression"
-							}
+							},
+							"requestTimeout": ""
 						},
 						"formatSettings": {
 							"type": "BinaryReadSettings"
@@ -60,7 +61,7 @@
 					"sink": {
 						"type": "BinarySink",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
+							"type": "AzureBlobStorageWriteSettings"
 						}
 					},
 					"enableStaging": false
@@ -73,7 +74,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DS_DL_Staging",
+						"referenceName": "DS_BLOB_Staging",
 						"type": "DatasetReference"
 					}
 				]
