@@ -2,7 +2,7 @@
 	"name": "DS_SP_Source",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_Sharepoint_Connection",
+			"referenceName": "LS_Sp_Connection",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
