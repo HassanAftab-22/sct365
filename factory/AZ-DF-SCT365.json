@@ -1,0 +1,9 @@
+{
+	"name": "AZ-DF-SCT365",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9a16b62d-d52b-4ef8-aa5b-4bf388bc97e1",
+		"tenantId": "5b703e6a-eac8-44b7-9c04-356bd60d435d"
+	}
+}
