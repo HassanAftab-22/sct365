@@ -41,7 +41,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "/sites/SCT/_api/web/GetFileByServerRelativeUrl('/sites/SCT/Data_Warehouse/PBI_Test/User1/Project1/A.csv')/$value"
+					},
+					{
+						"name": "Destination",
+						"value": "sct-container-dev/data/Sample.csv"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "BinarySource",
