@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "A.csv",
 				"container": "sct-container-dev"
 			}
 		}
