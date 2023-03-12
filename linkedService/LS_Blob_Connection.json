@@ -1,0 +1,11 @@
+{
+	"name": "LS_Blob_Connection",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"containerUri": "https://sct365dev.blob.core.windows.net/sct365-container",
+			"authenticationType": "Anonymous"
+		}
+	}
+}
